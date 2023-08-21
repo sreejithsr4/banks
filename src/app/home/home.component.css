@@ -1,0 +1,158 @@
+.op{
+    background-color: rgba(71, 12, 12, 0.788);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    padding: 20px;
+    border: 1px solid white;
+    transition: transform .5s ease-in-out;
+}
+i{
+    padding-top: 10px;
+}
+h1{
+    color: white;
+}
+h4{margin-top: 20px;
+color: white;}
+.cls1 p{
+   margin-bottom: 5px;
+   font-size: small;
+}
+.cls1{
+   margin: 1px;
+    background-color: rgba(68, 8, 8, 0.829); 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+input{
+    width: 80%;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    margin:30px 0px;
+}
+button{
+    background-color: rgba(68, 8, 8, 0);
+    width: 150px;
+    height: 50px;
+    border: none;
+    color: aliceblue;
+}
+    .op:hover{
+        transform: scale(1.05);
+       background-color:rgba(68, 8, 8, 0.952) ;
+    }
+    .dl{
+        display: flex;
+        justify-content: end;
+     
+    width: 100%;
+        align-items: center;
+        margin: 30px;
+        margin-bottom: 120px;
+    }
+.row{
+    margin:30px ;
+}
+.dl button{
+   background-color:  rgba(68, 8, 8, 0.952);
+}
+.input button{
+    background-color:  rgba(68, 8, 8, 0.952);
+}
+.bl, .usr{
+    background-color: rgb(236, 122, 122);
+    padding: 20px;
+}
+.tr button{
+ margin: 10px;
+    
+   background-color:rgba(68, 8, 8, 0.952) ;
+   width: 80%;
+}
+.tr input{
+    margin: 10px;
+}
+.vl{
+
+    background-image: url("https://i.postimg.cc/3wg2GfmM/gettyimages-255458-001-1024x1024.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.usr img{
+    width: 30%;
+   
+}
+.usr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel img{
+    height: 400px;
+}
+.modal-content{
+    background-color: rgba(68, 14, 14, 0.815);
+}
+#exampleModal1 button{
+    color: white;
+    background-color: black;
+}
+.modal-content{
+    width: 300px;
+}
+.modal-content button{
+    color: white;
+    background-color: black;
+    width: 80px;
+    height: 40px;
+}
+.offcanvas-header{
+    background-color: rgb(66, 13, 13);
+    color: aliceblue;
+}
+.btn-close{
+    background-color: aliceblue;
+    height: 30px;
+    width: 150px;
+}
+.nxt{
+    margin-top: 200px;
+}
+.dropdown-menu{
+    background-color:rgb(99, 48, 48) ;
+   
+    width:300px;
+}
+.dropdown-menu a{
+ color: black;
+    text-decoration: none;
+}
+.cls1:hover{
+    background-color: rgb(49, 9, 9);
+}
+.input button:hover{
+    background-color: rgb(41, 4, 4);
+}
+.bl h5{
+    color: aliceblue;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel img{
+        height: 200px;
+    }
+    .nxt{
+        margin-top: 50px;
+    }
+}

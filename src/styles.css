@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Dancing+Script:wght@500;700&family=Edu+SA+Beginner:wght@600&family=Mogra&display=swap');
+body{
+    background-image: url('https://i.postimg.cc/ZYNMWrMj/etienne-martin-2-K82gx9-Uk8-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
