@@ -14,9 +14,7 @@ constructor(private route:Router,private ds:ServService){
 
 }
 ngOnInit(): void {
-  setTimeout(()=>{this.ds.serviceMethod()},2000)
-  
-this.sdata=this.ds.data
+
 }
 login(){
   this.route.navigateByUrl("home")

@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,9 +6,11 @@ import { Injectable } from '@angular/core';
 })
 export class ServService {
 
-  constructor() { }
-  data="data inside service file"
-  serviceMethod(){
-    alert("service method")
-  }
+  constructor(private http:HttpClient) { }
+baseurl:any="http://localhost:5006"
+//api to create account
+accountcreate(accno:any, psw:any, uname:any){
+  const bodyData={accno,psw,uname}
+  return this.http.post(`${this.baseurl}/bankuser/create_account`,bodyData)
+}
 }
