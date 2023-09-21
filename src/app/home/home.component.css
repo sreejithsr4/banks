@@ -11,11 +11,18 @@
 i{
     padding-top: 10px;
 }
+.name{
+    color: rgb(71, 30, 30);
+}
 h1{
     color: white;
 }
-h4{margin-top: 20px;
+.mtop{margin-top: 20%;
 color: white;}
+.side{
+    display: flex;
+    justify-content: end;
+}
 .cls1 p{
    margin-bottom: 5px;
    font-size: small;
@@ -67,7 +74,7 @@ button{
     background-color:  rgba(68, 8, 8, 0.952);
 }
 .bl, .usr{
-    background-color: rgb(236, 122, 122);
+    background-color: rgba(105, 39, 39, 0.699);
     padding: 20px;
 }
 .tr button{
@@ -91,13 +98,23 @@ button{
 }
 .usr{
     display: flex;
+    flex-direction: column;
+background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.usr h4{
+    margin-top:none;
+    color: aliceblue;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-   
-    background-size: cover;
-    background-repeat: no-repeat;
 }
+
 .carousel img{
     height: 400px;
 }
@@ -140,12 +157,28 @@ button{
 }
 .cls1:hover{
     background-color: rgb(49, 9, 9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .input button:hover{
     background-color: rgb(41, 4, 4);
 }
 .bl h5{
     color: aliceblue;
+}
+.s1{
+    color: red;
+    background-color: black;
+}
+.s2{
+    color: green;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.hc{
+    display: none;
 }
 
 @media only screen and (max-width: 600px) {

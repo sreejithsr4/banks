@@ -7,12 +7,21 @@
             <i class="fa-solid fa-quote-right" style="color: #000205;"></i>
           </h1>
         </div>
-        <div class="col-md-6 login  ">
-          <h3>Login</h3>
-          <input #acno type="text" placeholder="User ID" id="us" name="ui">
-          <input #psw type="password" placeholder="Password" id="ps" name="pw">
-          <button (click)="login()" type="button" id="btn">Log In</button>
-          <p class="clear">Need an Account? <a href="signup">Sign Up</a></p>
+        <div class="col-md-6   ">
+         
+       <form (ngSubmit)="login()" [formGroup]="loginForm" class="login">
+        <h3>Login</h3>
+            <input formControlName="accno" type="text" placeholder="Account Number" id="us" name="username">
+            <p class="text-danger"
+                    *ngIf="this.loginForm.get('accno')?.errors && this.loginForm.get('accno')?.touched">Accept Only
+                    Numbers</p>
+            <input formControlName="psw"  type="password" placeholder="Password" id="ps" name="psw">
+            <p class="text-danger"
+                    *ngIf="this.loginForm.get('psw')?.errors && this.loginForm.get('psw')?.touched">Please include
+                    characters and Numbers Only</p>
+            <button  type="submit" id="btn">Log In</button>
+            <p class="clear">Need an Account? <a href="signup">Sign Up</a></p>
+       </form>
         </div>
         
       </div>

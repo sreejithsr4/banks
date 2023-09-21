@@ -1,0 +1,6 @@
+<div *ngIf="data" class="box container border border-dark">
+    <h2>Are you sure?</h2>
+    <p>Do you want to delete your bank Account {{data}}?</p>
+   <div class="side"> <button (click)="cdelete()" type="submit" class="btn btn-danger btn-outline-dark ">Yes</button>
+    <button (click)="cancel()" type="submit" class="btn btn-success btn-outline-dark">No</button></div>
+</div>

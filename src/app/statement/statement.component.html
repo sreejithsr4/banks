@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row m-2">
+    <div class="col-md-6 bg">
+      <h2 class="m-3">Account Statement</h2>
+      <div class="btn-group m-3">
+        <button (click)="filterData('')" class="btn btn-info">All</button>
+        <button (click)="filterData('DEBIT')" class="btn btn-info">Debit</button><button (click)="filterData('CREDIT')"
+          class="btn btn-info">Credit</button>
+      </div>
+      <div *ngIf="spinner" class="text-center p-5">
+        <i class="fa-solid fa-circle-notch fa-spin fa-2xl" style="color: #f3f4f7;"></i>
+      </div>
+      <table *ngIf="!spinner" class="table table-success table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Method</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Account Holder Number</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of transactionArray | filter : searchTerm :'method'  ,let j = index">
+            <th>{{j+1}}</th>
+            <td>{{i.method}}</td>
+            <td>{{i.Amount}}</td>
+            <td> {{i.tAcno}} </td>
+            <td> {{i.Date}} </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <div class="bn">
+        <button (click)="pdfexport()" class="btn btn-dark m-2">Download<i class="fa-solid fa-download fa-lg p-1"
+            style="color: #f5f5f5;"></i></button>
+      </div>
+    </div>
+    <div class="col-md-6 bg">
+      <p>{{date | date : 'short'}}</p>
+      <img src="https://i.postimg.cc/cJyxQjvD/what-is-a-bank-statement.webp" alt="">
+
+
+      <div class="bn">
+        <button class="btn btn-dark mt-5"><a href="home">Back To Home</a> <i class="fa-solid fa-house fa-lg p-1"
+            style="color: #f7f7f7;"></i></button>
+      </div>
+    </div>
+  </div>
+</div>

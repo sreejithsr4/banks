@@ -1,0 +1,11 @@
+.side{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: rgba(206, 92, 92, 0.719);
+    padding: 30px;
+}

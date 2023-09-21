@@ -1,0 +1,17 @@
+.bg{
+    background-color: rgba(75, 33, 33, 0.637);
+    
+    padding: 10px;
+    color: aliceblue;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.bn{
+    display: flex;
+    justify-content: end;
+}
