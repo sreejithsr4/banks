@@ -36,6 +36,7 @@ export class LoginComponent implements OnInit {
           //store account number in local storage
           localStorage.setItem("currentacno", JSON.stringify(accno))
           localStorage.setItem("userName", result.currentUser)
+          localStorage.setItem("token",JSON.stringify(result.token))
 
         },
         error: (result: any) => {

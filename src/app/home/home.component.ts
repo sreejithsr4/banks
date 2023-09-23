@@ -80,7 +80,7 @@ export class HomeComponent implements OnInit {
     var psw = this.moneyTransfer.value.psw
     var amount = this.moneyTransfer.value.amount
     var date = this.myDate
-    console.log(this.myDate);
+   
     if (this.moneyTransfer.valid) {
       if (rAcno == sAcno) {
         this.message = "enter valid account number"
@@ -116,6 +116,7 @@ export class HomeComponent implements OnInit {
     
       localStorage.removeItem("userName")
      localStorage.removeItem("currentacno")
+     localStorage.removeItem("token")
     this.rout.navigateByUrl("")
   
   }

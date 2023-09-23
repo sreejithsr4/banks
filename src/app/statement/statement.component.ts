@@ -20,13 +20,13 @@ constructor(private service:ServService){
   ngOnInit(): void {
     if (localStorage.getItem("currentacno")) {
       this.accno = JSON.parse(localStorage.getItem("currentacno") || "")
-      console.log(this.accno);
+     
       
     }
     this.service.accountStatementApi(this.accno).subscribe({
       next:(result:any)=>{
         this.transactionArray=result.message
-        console.log(this.transactionArray);
+        
         
       }
     })
