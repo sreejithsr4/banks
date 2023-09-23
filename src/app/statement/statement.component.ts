@@ -33,7 +33,7 @@ constructor(private service:ServService){
     setTimeout(()=>{
       this.spinner=false
 
-    },2000)
+    },1000)
     this.date=new Date()
     }
     filterData(search:any){
